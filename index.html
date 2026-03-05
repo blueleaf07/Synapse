@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synapse — Digital Experiences That Connect</title>
+  <meta name="description" content="Synapse crafts stunning websites for hospitals, restaurants, fashion brands, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo" data-page="home">
+        <svg width="32" height="32" viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#9D84CE"/>
+              <stop offset="100%" stop-color="#C99068"/>
+            </linearGradient>
+          </defs>
+          <circle cx="30" cy="50" r="10" fill="url(#lg)"/>
+          <circle cx="70" cy="50" r="10" fill="url(#lg)"/>
+          <circle cx="50" cy="22" r="10" fill="url(#lg)"/>
+          <circle cx="50" cy="78" r="10" fill="url(#lg)"/>
+          <line x1="40" y1="50" x2="60" y2="50" stroke="url(#lg)" stroke-width="3"/>
+          <line x1="50" y1="32" x2="50" y2="68" stroke="url(#lg)" stroke-width="3"/>
+          <line x1="37" y1="42" x2="43" y2="58" stroke="url(#lg)" stroke-width="2" opacity="0.6"/>
+          <line x1="57" y1="42" x2="63" y2="58" stroke="url(#lg)" stroke-width="2" opacity="0.6"/>
+        </svg>
+        <span>Synapse</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home"       class="nav-link active" data-page="home">Home</a>
+        <a href="#about"      class="nav-link" data-page="about">About</a>
+        <a href="#services"   class="nav-link" data-page="services">Services</a>
+        <a href="#industries" class="nav-link" data-page="industries">Industries</a>
+        <a href="#portfolio"  class="nav-link" data-page="portfolio">Portfolio</a>
+        <a href="#contact"    class="nav-link" data-page="contact">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta" data-page="contact">Start a Project</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home"       class="mob-link" data-page="home">Home</a>
+      <a href="#about"      class="mob-link" data-page="about">About</a>
+      <a href="#services"   class="mob-link" data-page="services">Services</a>
+      <a href="#industries" class="mob-link" data-page="industries">Industries</a>
+      <a href="#portfolio"  class="mob-link" data-page="portfolio">Portfolio</a>
+      <a href="#contact"    class="mob-link" data-page="contact">Contact</a>
+      <a href="#contact"    class="mob-cta"  data-page="contact">Start a Project →</a>
+    </div>
+  </header>
+
+  <!-- PAGES CONTAINER -->
+  <main id="app">
+
+    <!-- ══════════════════ HOME ══════════════════ -->
+    <section id="home" class="page active">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-bg">
+          <div class="blob b1"></div>
+          <div class="blob b2"></div>
+          <div class="blob b3"></div>
+          <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="container hero-content">
+          <div class="badge"><span class="badge-star">✦</span> Premium Web Studio</div>
+          <h1 class="hero-title">
+            <span>We Design</span>
+            <em>Digital Worlds</em>
+            <span>That <span class="grad-text">Connect.</span></span>
+          </h1>
+          <p class="hero-sub">Synapse crafts exceptional websites for healthcare, restaurants, fashion, and beyond — where beautiful design meets purposeful strategy.</p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary" data-page="contact">Start a Project <span>→</span></a>
+            <a href="#portfolio" class="btn-ghost" data-page="portfolio">View Our Work ↗</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hstat"><span class="hstat-v">120+</span><span class="hstat-l">Websites Delivered</span></div>
+            <div class="hstat-div"></div>
+            <div class="hstat"><span class="hstat-v">98%</span><span class="hstat-l">Client Satisfaction</span></div>
+            <div class="hstat-div"></div>
+            <div class="hstat"><span class="hstat-v">8</span><span class="hstat-l">Industries Served</span></div>
+            <div class="hstat-div"></div>
+            <div class="hstat"><span class="hstat-v">5★</span><span class="hstat-l">Average Rating</span></div>
+          </div>
+        </div>
+        <div class="scroll-hint">↓</div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee-bar">
+        <div class="marquee-track">
+          <span>Web Design <em>✦</em></span><span>Brand Identity <em>✦</em></span><span>UI/UX <em>✦</em></span>
+          <span>E-Commerce <em>✦</em></span><span>Healthcare <em>✦</em></span><span>Restaurants <em>✦</em></span>
+          <span>Fashion <em>✦</em></span><span>Real Estate <em>✦</em></span><span>SEO <em>✦</em></span>
+          <span>Web Design <em>✦</em></span><span>Brand Identity <em>✦</em></span><span>UI/UX <em>✦</em></span>
+          <span>E-Commerce <em>✦</em></span><span>Healthcare <em>✦</em></span><span>Restaurants <em>✦</em></span>
+          <span>Fashion <em>✦</em></span><span>Real Estate <em>✦</em></span><span>SEO <em>✦</em></span>
+        </div>
+      </div>
+
+      <!-- Industries preview -->
+      <div class="section" id="ind-preview">
+        <div class="container">
+          <div class="sec-head reveal">
+            <span class="eyebrow">What We Do</span>
+            <h2>Built for Every <em>Industry</em></h2>
+            <p>From hospitals to haute couture — experiences that feel native to your world.</p>
+          </div>
+          <div class="ind-grid reveal stagger">
+            <div class="ind-card" style="--cc:#F0EBFB;--ca:#7B63B5" data-page="industries">
+              <span class="ic-emoji">🏥</span>
+              <h3>Healthcare</h3>
+              <p>Websites that build trust for hospitals, clinics & doctors.</p>
+              <span class="ic-arr">↗</span>
+            </div>
+            <div class="ind-card" style="--cc:#FDF6F0;--ca:#C99068" data-page="industries">
+              <span class="ic-emoji">🍽️</span>
+              <h3>Restaurants & Food</h3>
+              <p>Mouth-watering menus, reservations & food blog experiences.</p>
+              <span class="ic-arr">↗</span>
+            </div>
+            <div class="ind-card" style="--cc:#EBE4FA;--ca:#7B63B5" data-page="industries">
+              <span class="ic-emoji">👗</span>
+              <h3>Fashion & Clothing</h3>
+              <p>Editorial-grade stores for boutiques and clothing brands.</p>
+              <span class="ic-arr">↗</span>
+            </div>
+            <div class="ind-card" style="--cc:#FDF6F0;--ca:#D9B08C" data-page="industries">
+              <span class="ic-emoji">🧴</span>
+              <h3>Beauty & Wellness</h3>
+              <p>Luxurious websites for spas, salons and beauty brands.</p>
+              <span class="ic-arr">↗</span>
+            </div>
+            <div class="ind-card" style="--cc:#EBF0FB;--ca:#6378B5" data-page="industries">
+              <span class="ic-emoji">⚖️</span>
+              <h3>Law & Finance</h3>
+              <p>Professional, authoritative sites that command confidence.</p>
+              <span class="ic-arr">↗</span>
+            </div>
+            <div class="ind-card" style="--cc:#FBF0EB;--ca:#B56363" data-page="industries">
+              <span class="ic-emoji">🏡</span>
+              <h3>Real Estate</h3>
+              <p>Stunning property listings and agency websites that sell.</p>
+              <span class="ic-arr">↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process -->
+      <div class="section process-sec">
+        <div class="process-sec-bg"></div>
+        <div class="container">
+          <div class="sec-head reveal">
+            <span class="eyebrow">How It Works</span>
+            <h2>Our <em>Four-Step</em> Process</h2>
+            <p>A clear, collaborative journey from idea to world-class website.</p>
+          </div>
+          <div class="process-track">
+            <div class="process-vline"></div>
+            <div class="proc-step reveal"><div class="proc-num">01</div><div class="proc-body"><h3>Discovery</h3><p>We learn your brand, goals, and audience through a deep discovery session.</p></div></div>
+            <div class="proc-step reveal"><div class="proc-num">02</div><div class="proc-body"><h3>Design</h3><p>Our designers craft pixel-perfect wireframes and visual concepts tailored to you.</p></div></div>
+            <div class="proc-step reveal"><div class="proc-num">03</div><div class="proc-body"><h3>Develop</h3><p>Clean, fast, responsive code brings the design to life across all devices.</p></div></div>
+            <div class="proc-step reveal"><div class="proc-num">04</div><div class="proc-body"><h3>Launch</h3><p>We deploy, optimize, and hand off with full training and ongoing support.</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="section testi-sec">
+        <div class="testi-bg"></div>
+        <div class="container">
+          <div class="sec-head reveal">
+            <span class="eyebrow">Client Love</span>
+            <h2>What Our Clients <em>Say</em></h2>
+          </div>
+          <div class="testi-grid reveal stagger">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-q">"Synapse completely transformed our hospital's online presence. Patients now find us and trust us before they even walk through the door."</p>
+              <div class="testi-auth"><div class="testi-av">P</div><div><strong>Dr. Priya Mehta</strong><span>CMO, Meridian Health</span></div></div>
+            </div>
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-q">"Our restaurant bookings tripled after launching our new site. The food photography integration and reservation system is seamless."</p>
+              <div class="testi-auth"><div class="testi-av">M</div><div><strong>Marco Bellini</strong><span>Owner, Bellini Ristorante</span></div></div>
+            </div>
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-q">"The fashion store Synapse built has gotten more compliments than our actual clothes. Sales went up 40% in the first month."</p>
+              <div class="testi-auth"><div class="testi-av">A</div><div><strong>Aisha Okonkwo</strong><span>Founder, Studio Aisha</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="cta-banner">
+        <div class="cta-banner-bg"></div>
+        <div class="container">
+          <div class="cta-inner reveal">
+            <span class="eyebrow light">Ready?</span>
+            <h2>Let's Build Something <em>Extraordinary</em></h2>
+            <p>Your next chapter starts with a single conversation.</p>
+            <div class="cta-btns">
+              <a href="#contact" class="btn-white" data-page="contact">Get a Free Quote →</a>
+              <a href="#portfolio" class="btn-ghost-white" data-page="portfolio">See Our Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT ══════════════════ -->
+    <section id="about" class="page">
+      <div class="page-hero">
+        <div class="page-hero-bg"><div class="blob b1"></div><div class="blob b2"></div></div>
+        <div class="container">
+          <div class="ph-content reveal">
+            <span class="eyebrow">Our Story</span>
+            <h1>We Are <em class="grad-text">Synapse</em></h1>
+            <p>A collective of designers, developers, and strategists who believe the web should be as beautiful as it is functional. We exist to connect brands with their audiences through digital experiences that endure.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="two-col reveal">
+            <div class="col-text stagger">
+              <span class="eyebrow">Our Mission</span>
+              <h2>Turning Visions Into <em>Digital Reality</em></h2>
+              <p>Founded with a singular belief: every business deserves a digital presence that truly represents its quality and values.</p>
+              <p>We don't do cookie-cutter websites. We do thoughtful, bespoke digital experiences that make your audience stop, look, and feel something.</p>
+              <a href="#contact" class="btn-primary" data-page="contact">Work With Us →</a>
+            </div>
+            <div class="mstat-grid">
+              <div class="mstat"><span class="mstat-v">2019</span><span class="mstat-l">Founded</span></div>
+              <div class="mstat"><span class="mstat-v">120+</span><span class="mstat-l">Projects</span></div>
+              <div class="mstat"><span class="mstat-v">8</span><span class="mstat-l">Industries</span></div>
+              <div class="mstat"><span class="mstat-v">4</span><span class="mstat-l">Countries</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section values-sec">
+        <div class="values-bg"></div>
+        <div class="container">
+          <div class="sec-head reveal"><span class="eyebrow">What Drives Us</span><h2>Our Core <em>Values</em></h2></div>
+          <div class="val-grid reveal stagger">
+            <div class="val-card"><div class="val-icon">♡</div><h3>Empathy First</h3><p>We deeply understand your users and design with their needs at the core of every decision.</p></div>
+            <div class="val-card"><div class="val-icon">✦</div><h3>Creative Courage</h3><p>We don't follow trends — we set them. Every project is an opportunity to make something new.</p></div>
+            <div class="val-card"><div class="val-icon">◎</div><h3>Strategic Clarity</h3><p>Beautiful design that converts. We balance aesthetics with your business objectives.</p></div>
+            <div class="val-card"><div class="val-icon">★</div><h3>Excellence Always</h3><p>We hold ourselves to the highest standards in every pixel, every line of code.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="sec-head reveal"><span class="eyebrow">The People</span><h2>Meet the <em>Team</em></h2><p>Small by design. Expert by choice.</p></div>
+          <div class="team-grid reveal stagger">
+            <div class="team-card" style="--tb:#F0EBFB"><div class="team-av">✦</div><h3>Aria Khan</h3><span>Creative Director</span></div>
+            <div class="team-card" style="--tb:#F5E8D8"><div class="team-av">◈</div><h3>Noah Rivers</h3><span>Lead Developer</span></div>
+            <div class="team-card" style="--tb:#EBF5E8"><div class="team-av">◇</div><h3>Zara Osei</h3><span>UX Strategist</span></div>
+            <div class="team-card" style="--tb:#FBF0EB"><div class="team-av">○</div><h3>Luca Marino</h3><span>Brand Designer</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ SERVICES ══════════════════ -->
+    <section id="services" class="page">
+      <div class="page-hero">
+        <div class="page-hero-bg"><div class="blob b1"></div><div class="blob b2"></div></div>
+        <div class="container">
+          <div class="ph-content reveal">
+            <span class="eyebrow">What We Offer</span>
+            <h1>Services Built for <em class="grad-text">Results</em></h1>
+            <p>From concept to code, we cover every aspect of your digital presence. Strategic, beautiful, and built to perform.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="svc-grid reveal stagger">
+            <div class="svc-card" style="--sc:#F0EBFB;--sa:#7B63B5">
+              <div class="svc-icon" style="color:#7B63B5">🎨</div>
+              <span class="svc-tag">Visuals that impress</span>
+              <h3>Web Design</h3>
+              <p>Bespoke, responsive designs unique to your brand, carefully crafted to convert visitors.</p>
+              <ul><li>✓ Custom brand-aligned layouts</li><li>✓ Mobile-first approach</li><li>✓ Accessibility compliant</li><li>✓ Interactive prototypes</li></ul>
+            </div>
+            <div class="svc-card" style="--sc:#F5E8D8;--sa:#C99068">
+              <div class="svc-icon">💻</div>
+              <span class="svc-tag">Fast, clean code</span>
+              <h3>Web Development</h3>
+              <p>Modern technologies ensuring your site is blazing fast, secure, and easy to maintain.</p>
+              <ul><li>✓ React / Next.js</li><li>✓ Lightning-fast load times</li><li>✓ CMS integration</li><li>✓ API & backend support</li></ul>
+            </div>
+            <div class="svc-card" style="--sc:#EBF5E8;--sa:#6BB568">
+              <div class="svc-icon">🛍️</div>
+              <span class="svc-tag">Stores that sell</span>
+              <h3>E-Commerce</h3>
+              <p>We design stores that convert browsers into buyers through smart UX and beautiful presentation.</p>
+              <ul><li>✓ Shopify & WooCommerce</li><li>✓ Product photography layout</li><li>✓ Cart & checkout optimization</li><li>✓ Payment gateway integration</li></ul>
+            </div>
+            <div class="svc-card" style="--sc:#FBF0EB;--sa:#B56363">
+              <div class="svc-icon">📐</div>
+              <span class="svc-tag">Experiences users love</span>
+              <h3>UI/UX Design</h3>
+              <p>Deep user research, wireframing, and prototyping to create intuitive, joyful digital experiences.</p>
+              <ul><li>✓ User research & personas</li><li>✓ Wireframing & prototyping</li><li>✓ Usability testing</li><li>✓ Design systems</li></ul>
+            </div>
+            <div class="svc-card" style="--sc:#EBF0FB;--sa:#6378B5">
+              <div class="svc-icon">🔍</div>
+              <span class="svc-tag">Visible and fast</span>
+              <h3>SEO & Performance</h3>
+              <p>Every site is optimized for search and speed from day one. We handle technical SEO and Core Web Vitals.</p>
+              <ul><li>✓ Technical SEO audit</li><li>✓ Core Web Vitals</li><li>✓ Content strategy</li><li>✓ Local SEO</li></ul>
+            </div>
+            <div class="svc-card" style="--sc:#FDF6F0;--sa:#D9B08C">
+              <div class="svc-icon">✨</div>
+              <span class="svc-tag">A brand that speaks</span>
+              <h3>Brand Identity</h3>
+              <p>Logos, color palettes, typography, and brand guidelines that make your business instantly recognizable.</p>
+              <ul><li>✓ Logo design</li><li>✓ Color & typography systems</li><li>✓ Brand guidelines</li><li>✓ Marketing materials</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing -->
+      <div class="section pricing-sec">
+        <div class="pricing-bg"></div>
+        <div class="container">
+          <div class="sec-head reveal"><span class="eyebrow">Investment</span><h2>Transparent <em>Pricing</em></h2><p>No hidden fees. No surprises. Clear value for world-class work.</p></div>
+          <div class="price-grid reveal stagger">
+            <div class="price-card">
+              <h3>Starter</h3>
+              <div class="price-amt">$1,500</div>
+              <p>Perfect for new businesses needing a clean, professional web presence.</p>
+              <ul>
+                <li>✓ Up to 5 pages</li><li>✓ Mobile responsive</li><li>✓ Contact form</li>
+                <li>✓ Basic SEO setup</li><li>✓ 1 revision round</li><li>✓ 2-week delivery</li>
+              </ul>
+              <a href="#contact" class="price-btn-ghost" data-page="contact">Get Started →</a>
+            </div>
+            <div class="price-card highlighted">
+              <div class="price-badge">Most Popular</div>
+              <h3>Growth</h3>
+              <div class="price-amt">$3,500</div>
+              <p>For established brands ready to scale their digital presence.</p>
+              <ul>
+                <li>✓ Up to 12 pages</li><li>✓ CMS integration</li><li>✓ Custom animations</li>
+                <li>✓ Full SEO optimization</li><li>✓ E-commerce ready</li><li>✓ 3 revision rounds</li><li>✓ 3–4 week delivery</li>
+              </ul>
+              <a href="#contact" class="price-btn-white" data-page="contact">Get Started →</a>
+            </div>
+            <div class="price-card">
+              <h3>Enterprise</h3>
+              <div class="price-amt">Custom</div>
+              <p>Fully bespoke solutions for complex needs and large organizations.</p>
+              <ul>
+                <li>✓ Unlimited pages</li><li>✓ Custom development</li><li>✓ Advanced integrations</li>
+                <li>✓ Performance audits</li><li>✓ Ongoing support</li><li>✓ Priority delivery</li>
+              </ul>
+              <a href="#contact" class="price-btn-ghost" data-page="contact">Contact Us →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ INDUSTRIES ══════════════════ -->
+    <section id="industries" class="page">
+      <div class="page-hero">
+        <div class="page-hero-bg"><div class="blob b1"></div><div class="blob b2"></div></div>
+        <div class="container">
+          <div class="ph-content reveal">
+            <span class="eyebrow">Specializations</span>
+            <h1>Every Industry, <em class="grad-text">Elevated</em></h1>
+            <p>We've built for hospitals and haute couture alike. Whatever your industry, we bring deep knowledge to every pixel.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <!-- Tab buttons -->
+          <div class="ind-tabs" id="indTabs">
+            <button class="ind-tab active" data-ind="hc" style="--ta:#9D84CE">🏥 Healthcare</button>
+            <button class="ind-tab" data-ind="food" style="--ta:#C99068">🍽️ Restaurants</button>
+            <button class="ind-tab" data-ind="fash" style="--ta:#7B63B5">👗 Fashion</button>
+            <button class="ind-tab" data-ind="beau" style="--ta:#D9B08C">🧴 Beauty</button>
+            <button class="ind-tab" data-ind="law" style="--ta:#6378B5">⚖️ Law & Finance</button>
+            <button class="ind-tab" data-ind="re" style="--ta:#B56363">🏡 Real Estate</button>
+          </div>
+
+          <!-- Panels -->
+          <div class="ind-panels">
+            <div class="ind-panel active" id="hc">
+              <div class="ip-left">
+                <div class="ip-label" style="color:#9D84CE">🏥 Healthcare</div>
+                <h2>Websites That Heal Trust</h2>
+                <p class="ip-sub">For Hospitals · Clinics · Doctors · Specialists</p>
+                <p class="ip-desc">In healthcare, trust is everything. Patients research online before they ever step through your doors. We build medical websites that are professional, accessible, and compliant — creating a digital front door that instills confidence from the first click.</p>
+                <div class="ip-features">
+                  <span>✦ Doctor & staff profiles</span><span>✦ Online appointment booking</span>
+                  <span>✦ Telemedicine integration</span><span>✦ Patient portal links</span>
+                  <span>✦ Insurance info & FAQs</span><span>✦ WCAG compliant</span>
+                </div>
+                <blockquote class="ip-quote" style="border-color:#9D84CE;background:#F0EBFB">"After launching our new site, our patient inquiries doubled in just 6 weeks." <cite>— Dr. Priya Mehta, Meridian Health</cite></blockquote>
+                <a href="#contact" class="btn-primary" data-page="contact">Build My Healthcare Site →</a>
+              </div>
+              <div class="ip-right" style="background:linear-gradient(135deg,#F0EBFB,#E8D5F0)">
+                <div class="ip-mock"><div class="ip-mock-hero" style="background:#C9B8E8">🏥</div><div class="ip-mock-lines"><span></span><span style="width:55%"></span></div><div class="ip-mock-cards"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+
+            <div class="ind-panel" id="food">
+              <div class="ip-left">
+                <div class="ip-label" style="color:#C99068">🍽️ Restaurants & Food</div>
+                <h2>Taste Before They Arrive</h2>
+                <p class="ip-sub">For Restaurants · Cafes · Food Bloggers · Caterers</p>
+                <p class="ip-desc">Dining is emotional. Your website should evoke the same feeling as your best dish — warm, inviting, and utterly irresistible. We create immersive food websites with stunning imagery, online menus, and reservation systems that make mouths water before the fork is lifted.</p>
+                <div class="ip-features">
+                  <span>✦ Immersive menu design</span><span>✦ Online reservations</span>
+                  <span>✦ Food blog platform</span><span>✦ Delivery integrations</span>
+                  <span>✦ Photo gallery & lightbox</span><span>✦ Chef & story sections</span>
+                </div>
+                <blockquote class="ip-quote" style="border-color:#C99068;background:#FDF6F0">"Our reservation bookings went up 3x after launch. The design speaks for itself." <cite>— Marco Bellini, Bellini Ristorante</cite></blockquote>
+                <a href="#contact" class="btn-primary" data-page="contact">Build My Restaurant Site →</a>
+              </div>
+              <div class="ip-right" style="background:linear-gradient(135deg,#FDF6F0,#F5E8D8)">
+                <div class="ip-mock"><div class="ip-mock-hero" style="background:#D9B08C">🍽️</div><div class="ip-mock-lines"><span></span><span style="width:55%"></span></div><div class="ip-mock-cards"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+
+            <div class="ind-panel" id="fash">
+              <div class="ip-left">
+                <div class="ip-label" style="color:#7B63B5">👗 Fashion & Clothing</div>
+                <h2>Wear Your Brand Online</h2>
+                <p class="ip-sub">For Boutiques · Designers · Clothing Brands · Accessories</p>
+                <p class="ip-desc">Fashion is art. Your digital storefront should feel like a runway — editorial, bold, and magnetic. We craft fashion websites and e-commerce stores that translate the tactile magic of your clothes into stunning digital experiences with editorial product photography layouts.</p>
+                <div class="ip-features">
+                  <span>✦ Editorial product layouts</span><span>✦ Lookbook & collection pages</span>
+                  <span>✦ Shopify / WooCommerce</span><span>✦ Size guide & filters</span>
+                  <span>✦ Wishlist functionality</span><span>✦ Instagram / social feeds</span>
+                </div>
+                <blockquote class="ip-quote" style="border-color:#7B63B5;background:#EBE4FA">"Sales increased 40% in the first month. Our customers say our site is better than the clothes." <cite>— Aisha Okonkwo, Studio Aisha</cite></blockquote>
+                <a href="#contact" class="btn-primary" data-page="contact">Build My Fashion Site →</a>
+              </div>
+              <div class="ip-right" style="background:linear-gradient(135deg,#EBE4FA,#DDD0F5)">
+                <div class="ip-mock"><div class="ip-mock-hero" style="background:#B49FDB">👗</div><div class="ip-mock-lines"><span></span><span style="width:55%"></span></div><div class="ip-mock-cards"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+
+            <div class="ind-panel" id="beau">
+              <div class="ip-left">
+                <div class="ip-label" style="color:#D9B08C">🧴 Beauty & Wellness</div>
+                <h2>Radiance, Digitized</h2>
+                <p class="ip-sub">For Spas · Salons · Beauty Brands · Wellness Studios</p>
+                <p class="ip-desc">Beauty brands demand a digital aesthetic that matches their standard of luxury. We create clean, serene, and sophisticated websites for spas, salons, skincare brands, and wellness studios — with online booking, product stores, and content that positions you as the authority in self-care.</p>
+                <div class="ip-features">
+                  <span>✦ Booking & appointment systems</span><span>✦ Service menu design</span>
+                  <span>✦ Before/after galleries</span><span>✦ Product shop</span>
+                  <span>✦ Blog & skin tips section</span><span>✦ Loyalty program pages</span>
+                </div>
+                <blockquote class="ip-quote" style="border-color:#D9B08C;background:#FDF6F0">"Our rebooking rate improved dramatically — clients now trust us before their first visit." <cite>— Léa Beaumont, Studio Léa</cite></blockquote>
+                <a href="#contact" class="btn-primary" data-page="contact">Build My Beauty Site →</a>
+              </div>
+              <div class="ip-right" style="background:linear-gradient(135deg,#FDF6F0,#F5E8D8)">
+                <div class="ip-mock"><div class="ip-mock-hero" style="background:#C99068;opacity:0.7">🧴</div><div class="ip-mock-lines"><span></span><span style="width:55%"></span></div><div class="ip-mock-cards"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+
+            <div class="ind-panel" id="law">
+              <div class="ip-left">
+                <div class="ip-label" style="color:#6378B5">⚖️ Law & Finance</div>
+                <h2>Authority, Established Online</h2>
+                <p class="ip-sub">For Law Firms · Accountants · Financial Advisors</p>
+                <p class="ip-desc">In professional services, your website is your reputation. We design sharp, authoritative websites for law firms, accounting firms, and financial advisors that communicate expertise and build trust at first glance — with practice area pages, attorney profiles, and client portals.</p>
+                <div class="ip-features">
+                  <span>✦ Practice area pages</span><span>✦ Attorney / advisor profiles</span>
+                  <span>✦ Case study showcase</span><span>✦ Client intake forms</span>
+                  <span>✦ Blog & legal insights</span><span>✦ GDPR & compliance ready</span>
+                </div>
+                <blockquote class="ip-quote" style="border-color:#6378B5;background:#EBF0FB">"We've been told our site looks better than firms three times our size." <cite>— James Chen, Chen & Associates</cite></blockquote>
+                <a href="#contact" class="btn-primary" data-page="contact">Build My Law Firm Site →</a>
+              </div>
+              <div class="ip-right" style="background:linear-gradient(135deg,#EBF0FB,#D5DCF5)">
+                <div class="ip-mock"><div class="ip-mock-hero" style="background:#8899CC">⚖️</div><div class="ip-mock-lines"><span></span><span style="width:55%"></span></div><div class="ip-mock-cards"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+
+            <div class="ind-panel" id="re">
+              <div class="ip-left">
+                <div class="ip-label" style="color:#B56363">🏡 Real Estate</div>
+                <h2>Properties That Sell Themselves</h2>
+                <p class="ip-sub">For Agencies · Developers · Independent Agents</p>
+                <p class="ip-desc">Real estate is a visual industry — first impressions happen online. We build immersive real estate websites with property listing systems, virtual tour integrations, neighborhood guides, and agent profiles that make buyers fall in love with a property before they've toured it.</p>
+                <div class="ip-features">
+                  <span>✦ Property listing systems</span><span>✦ Advanced search & filters</span>
+                  <span>✦ Virtual tour integration</span><span>✦ Agent profiles & CRM</span>
+                  <span>✦ Neighborhood guides</span><span>✦ Market report pages</span>
+                </div>
+                <blockquote class="ip-quote" style="border-color:#B56363;background:#FBF0EB">"Our properties now generate leads online before we even list them publicly." <cite>— Sarah Mitchell, Prestige Properties</cite></blockquote>
+                <a href="#contact" class="btn-primary" data-page="contact">Build My Real Estate Site →</a>
+              </div>
+              <div class="ip-right" style="background:linear-gradient(135deg,#FBF0EB,#F5D5C0)">
+                <div class="ip-mock"><div class="ip-mock-hero" style="background:#CC8877">🏡</div><div class="ip-mock-lines"><span></span><span style="width:55%"></span></div><div class="ip-mock-cards"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ PORTFOLIO ══════════════════ -->
+    <section id="portfolio" class="page">
+      <div class="page-hero">
+        <div class="page-hero-bg"><div class="blob b1"></div><div class="blob b2"></div></div>
+        <div class="container">
+          <div class="ph-content reveal">
+            <span class="eyebrow">Our Work</span>
+            <h1>Projects That <em class="grad-text">Speak</em></h1>
+            <p>A curated selection of our finest digital work — from healthcare to haute couture, each project a story in pixels.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="port-filters reveal" id="portFilters">
+            <button class="pf-btn active" data-filter="all">All</button>
+            <button class="pf-btn" data-filter="Healthcare">Healthcare</button>
+            <button class="pf-btn" data-filter="Restaurant">Restaurant</button>
+            <button class="pf-btn" data-filter="Fashion">Fashion</button>
+            <button class="pf-btn" data-filter="Beauty">Beauty</button>
+            <button class="pf-btn" data-filter="Legal">Legal</button>
+            <button class="pf-btn" data-filter="Real Estate">Real Estate</button>
+          </div>
+          <div class="port-grid" id="portGrid">
+            <div class="port-card" data-cat="Healthcare"><div class="pc-thumb" style="background:linear-gradient(135deg,#C9B8E8,#E8D5F0)"><span>🏥</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Healthcare</span><span>2024</span></div><h3>Meridian Health Center</h3><p>A calming, trust-forward website for a multi-specialty clinic.</p><div class="pc-tags"><span>Web Design</span><span>Booking System</span></div></div></div>
+            <div class="port-card" data-cat="Restaurant"><div class="pc-thumb" style="background:linear-gradient(135deg,#D9B08C,#F5E8D8)"><span>🍝</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Restaurant</span><span>2024</span></div><h3>Bellini Ristorante</h3><p>An immersive Italian dining experience, online.</p><div class="pc-tags"><span>E-Commerce</span><span>Reservations</span></div></div></div>
+            <div class="port-card" data-cat="Fashion"><div class="pc-thumb" style="background:linear-gradient(135deg,#B49FDB,#DDD0F5)"><span>👗</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Fashion</span><span>2023</span></div><h3>Studio Aisha</h3><p>Editorial fashion store for a rising couture brand.</p><div class="pc-tags"><span>Shopify</span><span>Editorial Design</span></div></div></div>
+            <div class="port-card" data-cat="Beauty"><div class="pc-thumb" style="background:linear-gradient(135deg,#C99068,#F5E8D8)"><span>🧴</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Beauty</span><span>2024</span></div><h3>Glow & Co Spa</h3><p>Luxurious spa website with seamless online booking.</p><div class="pc-tags"><span>Booking</span><span>Brand Identity</span></div></div></div>
+            <div class="port-card" data-cat="Legal"><div class="pc-thumb" style="background:linear-gradient(135deg,#8899CC,#D5DCF5)"><span>⚖️</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Legal</span><span>2023</span></div><h3>Chen & Associates</h3><p>Sharp, authoritative digital presence for a boutique law firm.</p><div class="pc-tags"><span>Web Design</span><span>CMS</span></div></div></div>
+            <div class="port-card" data-cat="Real Estate"><div class="pc-thumb" style="background:linear-gradient(135deg,#CC8877,#F5D5C0)"><span>🏡</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Real Estate</span><span>2024</span></div><h3>Prestige Properties</h3><p>Property showcase platform for a luxury real estate agency.</p><div class="pc-tags"><span>Listings</span><span>Search System</span></div></div></div>
+            <div class="port-card" data-cat="Healthcare"><div class="pc-thumb" style="background:linear-gradient(135deg,#A8D8B9,#DFF5E8)"><span>💚</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Healthcare</span><span>2024</span></div><h3>NourishMD Clinic</h3><p>Nutrition and wellness clinic with telemedicine integration.</p><div class="pc-tags"><span>Telemedicine</span><span>Patient Portal</span></div></div></div>
+            <div class="port-card" data-cat="Restaurant"><div class="pc-thumb" style="background:linear-gradient(135deg,#D4A27A,#F5E0CC)"><span>🥐</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Restaurant</span><span>2023</span></div><h3>The Baker's Table</h3><p>Artisan bakery brand with a full recipe blog and order system.</p><div class="pc-tags"><span>Food Blog</span><span>Online Orders</span></div></div></div>
+            <div class="port-card" data-cat="Fashion"><div class="pc-thumb" style="background:linear-gradient(135deg,#C9B8E8,#F0EBFB)"><span>✨</span><div class="pc-ov">View Project ↗</div></div><div class="pc-info"><div class="pc-meta"><span class="pc-cat">Fashion</span><span>2024</span></div><h3>Maison Élise</h3><p>Paris-inspired luxury fashion boutique, built in WooCommerce.</p><div class="pc-tags"><span>Lookbook</span><span>WooCommerce</span></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ CONTACT ══════════════════ -->
+    <section id="contact" class="page">
+      <div class="page-hero">
+        <div class="page-hero-bg"><div class="blob b1"></div><div class="blob b2"></div></div>
+        <div class="container">
+          <div class="ph-content reveal">
+            <span class="eyebrow">Let's Talk</span>
+            <h1>Start Your <em class="grad-text">Next Project</em></h1>
+            <p>Tell us about your vision. We'll respond within 24 hours with a tailored plan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-form-wrap reveal">
+              <form id="contactForm" novalidate>
+                <h2>Tell Us About Your Project</h2>
+                <p class="form-sub">Fill in the details and we'll be in touch shortly.</p>
+                <div class="form-row">
+                  <div class="ff"><label>Your Name *</label><input type="text" name="name" placeholder="Jane Smith" required /></div>
+                  <div class="ff"><label>Email Address *</label><input type="email" name="email" placeholder="jane@company.com" required /></div>
+                </div>
+                <div class="form-row">
+                  <div class="ff"><label>Company / Brand</label><input type="text" name="company" placeholder="Your Company Name" /></div>
+                  <div class="ff"><label>Your Industry</label>
+                    <select name="industry">
+                      <option value="">Select your industry…</option>
+                      <option>Healthcare</option><option>Restaurant / Food</option>
+                      <option>Fashion / Clothing</option><option>Beauty / Wellness</option>
+                      <option>Law / Finance</option><option>Real Estate</option><option>Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="ff">
+                  <label>Budget Range</label>
+                  <div class="budget-btns">
+                    <button type="button" class="bb">Under $1,500</button>
+                    <button type="button" class="bb">$1,500 – $3,500</button>
+                    <button type="button" class="bb">$3,500 – $7,000</button>
+                    <button type="button" class="bb">$7,000+</button>
+                    <button type="button" class="bb">Not sure yet</button>
+                  </div>
+                </div>
+                <div class="ff"><label>Tell Us About Your Project *</label><textarea name="message" rows="5" placeholder="Describe your project, goals, and any specific requirements…" required></textarea></div>
+                <button type="submit" class="submit-btn" id="submitBtn"><span>Send My Brief</span> <span class="send-arrow">→</span></button>
+              </form>
+              <div class="success-msg" id="successMsg" style="display:none">
+                <div class="success-icon">✓</div>
+                <h2>Message Received!</h2>
+                <p>Thank you! We've received your brief and will reach out within 24 hours.</p>
+              </div>
+            </div>
+
+            <div class="contact-aside reveal">
+              <div class="ci-card dark-card">
+                <h3>Contact Information</h3>
+                <div class="ci-items">
+                  <a href="mailto:hello@synapse.studio" class="ci-item"><div class="ci-ic">✉</div><div><span>Email Us</span><strong>hello@synapse.studio</strong></div></a>
+                  <a href="tel:+11234567890" class="ci-item"><div class="ci-ic">☎</div><div><span>Call Us</span><strong>+1 (123) 456-7890</strong></div></a>
+                  <div class="ci-item"><div class="ci-ic">📍</div><div><span>Location</span><strong>San Francisco, CA</strong></div></div>
+                  <div class="ci-item"><div class="ci-ic">⏱</div><div><span>Response Time</span><strong>Within 24 hours</strong></div></div>
+                </div>
+              </div>
+              <div class="ci-card promise-card">
+                <h4>Our Promise to You</h4>
+                <ul>
+                  <li>✓ No pushy sales calls</li>
+                  <li>✓ Free initial consultation</li>
+                  <li>✓ Honest, transparent pricing</li>
+                  <li>✓ Clear timelines upfront</li>
+                  <li>✓ You own everything we build</li>
+                </ul>
+              </div>
+              <div class="ci-card faq-card">
+                <h4>Quick FAQ</h4>
+                <div class="faq-item"><strong>How long does a project take?</strong><p>Most websites take 2–4 weeks depending on scope.</p></div>
+                <div class="faq-item"><strong>Do you offer ongoing support?</strong><p>Yes — we offer monthly maintenance packages.</p></div>
+                <div class="faq-item"><strong>Can I update the site myself?</strong><p>Absolutely. We build with easy-to-manage CMS platforms.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" data-page="home">
+            <svg width="28" height="28" viewBox="0 0 100 100"><defs><linearGradient id="flg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#C9B8E8"/><stop offset="100%" stop-color="#D9B08C"/></linearGradient></defs><circle cx="30" cy="50" r="10" fill="url(#flg)"/><circle cx="70" cy="50" r="10" fill="url(#flg)"/><circle cx="50" cy="22" r="10" fill="url(#flg)"/><circle cx="50" cy="78" r="10" fill="url(#flg)"/><line x1="40" y1="50" x2="60" y2="50" stroke="url(#flg)" stroke-width="3"/><line x1="50" y1="32" x2="50" y2="68" stroke="url(#flg)" stroke-width="3"/></svg>
+            <span>Synapse</span>
+          </a>
+          <p>We build digital experiences that connect brands with their audience — beautifully.</p>
+          <div class="footer-socials">
+            <a href="#">✦</a><a href="#">in</a><a href="#">tw</a><a href="#">ig</a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <a href="#home" data-page="home">Home</a>
+          <a href="#about" data-page="about">About</a>
+          <a href="#services" data-page="services">Services</a>
+          <a href="#industries" data-page="industries">Industries</a>
+          <a href="#portfolio" data-page="portfolio">Portfolio</a>
+          <a href="#contact" data-page="contact">Contact</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Services</h4>
+          <a href="#services" data-page="services">Web Design</a>
+          <a href="#services" data-page="services">UI/UX Design</a>
+          <a href="#services" data-page="services">E-Commerce</a>
+          <a href="#services" data-page="services">SEO & Performance</a>
+          <a href="#services" data-page="services">Brand Identity</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <a href="mailto:hello@synapse.studio">✉ hello@synapse.studio</a>
+          <a href="tel:+11234567890">☎ +1 (123) 456-7890</a>
+          <span>📍 San Francisco, CA</span>
+          <a href="#contact" class="footer-cta" data-page="contact">Start a Project →</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Synapse Studio. All rights reserved.</p>
+        <div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
